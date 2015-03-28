@@ -1,21 +1,21 @@
 <div class="container">
 	<h1 class="logo">
-	<a href="" class="homepageLinkClass">
+	{{#link-to "index" class="homepageLinkClass"}} 
 		SAMOCA - San Angelico Museum of Contemporary Art
-	</a>
+	{{/link-to}}
 	</h1>
 	<nav class="navClass centerText">
-		<a href="#" class="btn btn-primary">About</a>
-		<a href="#" class="btn btn-primary">Collections</a>
-		<a href="#" class="btn btn-primary">Exhibits</a>
-		<a href="#" class="btn btn-primary">Visitor Notes</a>
+		{{#link-to "about" class="btn btn-primary"}}About{{/link-to}}
+		{{#link-to "collections" class="btn btn-primary"}}Collections{{/link-to}}
+		{{#link-to "exhibits" class="btn btn-primary"}}Exhibits{{/link-to}}
+		{{#link-to "notes" class="btn btn-primary"}}Visitor Notes{{/link-to}}
+		
 	</nav>
-	<main class="mainClass cf">
+	<main class="mainClass cf">{{outlet}}</main>
 	<footer class="footerClass centerText cf">
 		<small>
 		&copy; San Angelico Myseum of Contemporary Art, 123 Main Street, Ventura, CA 12345 (555)-555-1212
 		</small>
 	</footer>
-	</main>
+	
 </div>
-{{outlet}}
