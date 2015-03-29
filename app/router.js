@@ -8,7 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
     this.route("about");
     this.route("collections");
-    this.resource("exhibits");
+    this.resource("exhibits", function(){
+        this.resource("exhibit", {path: "/:exhibit_id"});
+    });
     this.route("notes");
 });
 

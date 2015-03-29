@@ -1,0 +1,19 @@
+<div class="pageClass">
+	<section class="exhibitSection cf">
+		<h2>Exhibits</h2>
+		<div>There are currently <strong><em>3</em></strong> exhibits running at SAMOCA.... visit us and see them All!!! </div>
+		<ul class="singleExhibitList cf">
+			{{#each exhibits}}
+				<li class="singleExhibitListItem">
+					<h3>
+						{{#link-to 'exhibit' this}}
+							{{title}}
+						{{/link-to}}
+					</h3>
+					<span><em>by<strong>{{artist_name}}</strong></em></span>
+				</li>
+			{{/each}}
+		</ul>
+		<div>{{outlet}}</div>
+	</section>
+</div>
