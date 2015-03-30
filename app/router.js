@@ -9,7 +9,7 @@ Router.map(function() {
     this.route("about");
     this.route("collections");
     this.resource("exhibits", function(){
-        this.resource("exhibit", {path: "/:exhibit_id"});
+        this.resource("exhibit", { path: "/:exhibit_id"} );
     });
     this.route("notes");
 });
