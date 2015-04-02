@@ -10,9 +10,15 @@ export default Ember.ObjectController.extend({
 			this.set("isEditing", false);
 			if(!(this.get("model.copy"))) {
 				this.send("deleteNote");
-			} else {
+			} 
+			else {
 				this.get("model").save();
 			}
+		},
+		deleteNote: function(){
+			this.get("model").deleteRecord();
+			this.get("model").save();
+
 		}
 	}
 });
