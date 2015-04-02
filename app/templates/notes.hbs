@@ -5,9 +5,22 @@
 	<p class="btnVolunteerParagraph">
 		<button {{action "newNote"}} class="btn btn-info">Save this note</button>
 	</p>
-	{{#each}}
+	{{#each itemController="note"}}
 		<div class="singleEntry">
-			{{copy}}	
+			{{#if isEditing}}
+				<p><strong>EDIT THIS NOTE...</strong></p>
+				{{update-note vaule=copy}}
+				<p class="btnVoluteerParagraph">
+					<button {{action "saveNewNote"}} class="btn btn-info">Save this note</button>
+				</p>
+				
+			{{else}}
+				{{copy}}
+				<hr>
+				<p class="btnVoluteerParagraph">
+					<button {{action "editNote"}} class="btn btn-info">Edit this note</button>
+				</p>
+			{{/if}}
 		</div>
 	{{/each}}
 </article>
