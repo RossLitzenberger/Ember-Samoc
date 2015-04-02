@@ -1,0 +1,13 @@
+<article class="pageClass">
+	<h2>Visitor Notes</h2>
+	{{#textarea placeholder="create a new note" id="newEntry" cols="50" rows="10" }}{{/textarea}}
+
+	<p class="btnVolunteerParagraph">
+		<button {{action "newNote"}} class="btn btn-info">Save this note</button>
+	</p>
+	{{#each}}
+		<div class="singleEntry">
+			{{copy}}	
+		</div>
+	{{/each}}
+</article>
