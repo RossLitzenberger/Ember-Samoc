@@ -9,7 +9,7 @@
 		<div class="singleEntry">
 			{{#if isEditing}}
 				<p><strong>EDIT THIS NOTE...</strong></p>
-				{{update-note vaule=copy}}
+				{{input value=copy id="copy" class="form-control"}}
 				<p class="btnVoluteerParagraph">
 					<button {{action "saveNewNote"}} class="btn btn-info">Save this note</button>
 				</p>
