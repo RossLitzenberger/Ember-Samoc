@@ -7,29 +7,23 @@ var Exhibits = DS.Model.extend({
 	  image: DS.attr()
 }).reopenClass({
 	FIXTURES: [
-		{ 
+		{
 			id: 1 ,
-			artist_name:"Todd 'The' Great", 
-			title: "Though Full Art", 
-			exhibit_info: "When i was ", 
+			artist_name:"Todd 'The' Great",
+			title: "Though Full Art",
+			exhibit_info: "When i was ",
 			image: "image.jpg"
 		},{
 			id: 2 ,
-			artist_name:"David Scott", 
-			title: "this", 
-			exhibit_info: "this", 
+			artist_name:"David Scott",
+			title: "this",
+			exhibit_info: "this",
 			image: "image.jpg"
 		},{
 			id: 3 ,
-			artist_name:"Ryan Free", 
-			title: "this", 
-			exhibit_info: "this", 
-			image: "image.jpg"
-		},{
-			id: 4 ,
-			artist_name:"", 
-			title: "this", 
-			exhibit_info: "this", 
+			artist_name:"Ryan Free",
+			title: "this",
+			exhibit_info: "this",
 			image: "image.jpg"
 		}]
 	});

@@ -1,5 +1,5 @@
 /* global require, module */
-
+import Bootstrap from 'bootstrap';
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
